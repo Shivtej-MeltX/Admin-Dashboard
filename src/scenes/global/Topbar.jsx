@@ -14,7 +14,13 @@ const Topbar = () => {
   const colorMode = useContext(ColorModeContext);
 
   return (
-    <Box display="flex" justifyContent="space-between" p={2}>
+    <Box
+      position="sticky"
+      top={0} //top={0} means => stick this element to the top of the container, 0px away from the top edge
+      display="flex"
+      justifyContent="space-between"
+      p={2}
+    >
       {/* Search Bar */}
       <Box
         display="flex"
